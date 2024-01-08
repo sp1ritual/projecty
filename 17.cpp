@@ -1,21 +1,35 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-int foo(int capacity, std::vector<int>& weight, std::vector<int>& value, int n){
-    if (capacity == 0 || n == 0){
-        return 0;
+bool searchfoo(const vector <int> &box,int key){
+    for (int item : box){
+        if (item == key){
+            return true;
+        }
     }
-    if (weight[n-1]>capacity){
-        return foo(capacity,weight,value,n-1);
+    return false;
+}
+bool findkey(const vector <vector <int>> &boxes, int key, int currentindex){
+    if (currentindex == boxes.size()){
+        return false;
+    }
+    if (searchfoo(boxes[currentindex],key)){
+        return true;
     } else {
-        return max(value[n-1]+foo(capacity-weight[n-1],weight,value,n-1), foo(capacity,weight,value,n-1));
+        return findkey(boxes,key,currentindex+1);
     }
 }
 int main(){
-    int capacity = 66;
-    vector <int> weight = {21,43,54,61,19,32};
-    vector <int> value = {6,12,17,21,32,21};
-    int n = weight.size();
-    cout<<"Max value from capacity "<<capacity<<" is equal "<<foo(capacity,weight,value,n);
+    vector <vector <int>> boxes = {{1,2,3},{4,5,6},{7,8,9}};
+    int key = 7;
+    if (findkey(boxes,key,0)){
+        cout<<"Key is found"<<endl;
+    }
+    else {
+        cout<<"Key is not found"<<endl;
+    }
     return 0;
+
+
+
 }
