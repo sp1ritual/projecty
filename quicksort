@@ -1,0 +1,30 @@
+#include <iostream>
+#include <vector>
+std::vector <int> quicksort(std::vector <int> array) {
+    if (array.size() < 2){
+        return array;
+    } else {
+        int pivot = array[0];
+        std::vector <int> less, greater;
+        for (int i=1;i<array.size();++i){
+            if (array[i] < pivot){
+                less.push_back(array[i]);
+            }
+            else {
+                greater.push_back(array[i]);
+            }
+        }
+        less = quicksort(less);
+        greater = quicksort(greater);
+        less.push_back(pivot);
+        less.insert(less.end(),greater.begin(),greater.end());
+        return less;
+    }
+}
+int main(){
+    std::vector <int> result = quicksort({10,2,18,5,22,13,21});
+    for (int num: result){
+        std::cout<<num<<" ";
+    }
+    return 0;
+}
