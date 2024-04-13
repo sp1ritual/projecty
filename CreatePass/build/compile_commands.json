@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/admi/diplproj/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/admi/diplproj/build/CreatePass_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/CreatePass.dir/CreatePass_autogen/mocs_compilation.cpp.o -c /Users/admi/diplproj/build/CreatePass_autogen/mocs_compilation.cpp",
+  "file": "/Users/admi/diplproj/build/CreatePass_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/CreatePass.dir/CreatePass_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/Users/admi/diplproj/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/admi/diplproj/build/CreatePass_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/CreatePass.dir/main.cpp.o -c /Users/admi/diplproj/main.cpp",
+  "file": "/Users/admi/diplproj/main.cpp",
+  "output": "CMakeFiles/CreatePass.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/admi/diplproj/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/admi/diplproj/build/CreatePass_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/CreatePass.dir/mainwindow.cpp.o -c /Users/admi/diplproj/mainwindow.cpp",
+  "file": "/Users/admi/diplproj/mainwindow.cpp",
+  "output": "CMakeFiles/CreatePass.dir/mainwindow.cpp.o"
+}
+]

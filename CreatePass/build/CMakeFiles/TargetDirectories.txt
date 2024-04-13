@@ -1,0 +1,9 @@
+/Users/admi/diplproj/build/CMakeFiles/CreatePass.dir
+/Users/admi/diplproj/build/CMakeFiles/edit_cache.dir
+/Users/admi/diplproj/build/CMakeFiles/rebuild_cache.dir
+/Users/admi/diplproj/build/CMakeFiles/list_install_components.dir
+/Users/admi/diplproj/build/CMakeFiles/install.dir
+/Users/admi/diplproj/build/CMakeFiles/install/local.dir
+/Users/admi/diplproj/build/CMakeFiles/install/strip.dir
+/Users/admi/diplproj/build/CMakeFiles/CreatePass_autogen_timestamp_deps.dir
+/Users/admi/diplproj/build/CMakeFiles/CreatePass_autogen.dir
