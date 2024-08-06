@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
-using namespace std;
-bool searchitem(const vector <int> &box,int key){
+bool searchitem(const std::vector<int>& box,int key){
     for (int item : box){
         if (item == key){
             return true;
@@ -9,24 +8,25 @@ bool searchitem(const vector <int> &box,int key){
     }
     return false;
 }
-bool recursive(const vector<vector <int>> &boxes,int key,int currentindex){
-    if (currentindex==boxes.size()){
-        return false; //net korobok
+bool recursive(const std::vector<std::vector<int>>& boxes,int key,int current_index){
+    //base case
+    if (current_index == boxes.size()){
+        return false; //boxes is not found
     }
-    if (searchitem(boxes[currentindex],key)){
+    if (searchitem(boxes[current_index],key)){
         return true;
     }
-    return recursive(boxes,key,currentindex+1);
+    //recursive case
+    return recursive(boxes,key,current_index+1);
 }
 int main(){
-    vector <vector <int>> boxes = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+    std::vector <std::vector <int>> boxes = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
     int key = 12;
     if (recursive(boxes,key,0)){
-        cout<<"Key is found";
+        std::cout<<"Key is found \n";
     }
     else {
-        cout<<"Key is not found";
+        std::cout<<"Key is not found \n";
     }
-
     return 0;
 }
