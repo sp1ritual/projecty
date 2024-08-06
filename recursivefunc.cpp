@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-bool searchgovna(const vector <int> &box,int key){
+bool searchitem(const vector <int> &box,int key){
     for (int item : box){
         if (item == key){
             return true;
@@ -13,7 +13,7 @@ bool recursive(const vector<vector <int>> &boxes,int key,int currentindex){
     if (currentindex==boxes.size()){
         return false; //net korobok
     }
-    if (searchgovna(boxes[currentindex],key)){
+    if (searchitem(boxes[currentindex],key)){
         return true;
     }
     return recursive(boxes,key,currentindex+1);
